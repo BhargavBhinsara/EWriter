@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_fragment">
+
+    <RelativeLayout
+        android:id="@+id/rlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/writerlogo"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_screen_lock_portrait_black_24dp" />
+
+                <LinearLayout
+                    android:id="@+id/lilay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_weight="1"
+                        android:background="#B73A49"
+                        android:src="@drawable/ic_account_circle_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="User name"
+                            android:textStyle="bold"
+                            android:textColor="#1F92ED"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user_id"
+                            android:textColor="#1F92ED"
+                            android:layout_below="@+id/user"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="46dp"
+                        android:layout_marginBottom="45dp"
+                        android:layout_weight="6.0"
+                        android:src="@drawable/ic_favorite_black_24dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:hint="Enter your comment"
+                android:layout_below="@+id/lilay2"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edittext_custom"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_screen_lock_portrait_black_24dp" />
+
+                <LinearLayout
+                    android:id="@+id/lilay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_account_circle_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/user1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="User name"
+                            android:textStyle="bold"
+                            android:textColor="#1F92ED"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user_id"
+                            android:textColor="#1F92ED"
+                            android:layout_below="@+id/user1"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="46dp"
+                        android:layout_marginBottom="45dp"
+                        android:layout_weight="6.0"
+                        android:src="@drawable/ic_favorite_black_24dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="Enter your comment"
+                android:layout_below="@+id/lilay2"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edittext_custom"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

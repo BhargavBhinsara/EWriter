@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="HOME"
+        app:cnb_backgroundColor="#2665E6"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="SEARCH"
+        app:cnb_backgroundColor="#2665E6"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+    <item
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:title="POST"
+        app:cnb_backgroundColor="#2665E6"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="PROFILE"
+        app:cnb_backgroundColor="#2665E6"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+</menu>

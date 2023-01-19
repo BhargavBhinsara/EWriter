@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#C7D4DF"
+        />
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign_up"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#1F92ED"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#1F92ED"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/txtsignup"
+        android:hint="user_name"
+        android:textColorHint="#1F92ED"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="email_id"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_name"
+        android:textColorHint="#1F92ED"
+        android:background="@drawable/edittext_custom"
+        android:inputType="textPassword"
+        android:textColor="#1F92ED"/>
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/email"
+        android:textColorHint="#1F92ED"
+        android:background="@drawable/edittext_custom"
+        android:inputType="textPassword"
+        android:textColor="#1F92ED"/>
+
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="sing_up"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/pw"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"/>
+
+    <LinearLayout
+        android:id="@+id/lilay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sign_in"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/gmail"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/gmail"/>
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/facbook"/>
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/instagram"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textColor="#1F92ED"
+        android:layout_below="@id/lilay"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
